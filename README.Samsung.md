@@ -28,7 +28,6 @@ cmake -DCMAKE_TOOLCHAIN_FILE=<YOUR EMSCRIPTEN INSTALLATION_DIR>/cmake/Modules/Pl
 ninja
 
 mkdir widget/
-cd widget/
 cmake --install . --prefix .
 ```
 

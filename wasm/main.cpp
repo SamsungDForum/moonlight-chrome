@@ -201,7 +201,7 @@ MessageResult MoonlightInstance::StartStream(
   m_StreamConfig.streamingRemotely = STREAM_CFG_AUTO;
   m_StreamConfig.packetSize = 1392;
   m_StreamConfig.supportsHevc = true;
-  m_StreamConfig.enableHdr = true;
+  //m_StreamConfig.enableHdr = true;
 
   // Load the rikey and rikeyid into the stream configuration
   HexStringToBytes(rikey.c_str(), m_StreamConfig.remoteInputAesKey);
