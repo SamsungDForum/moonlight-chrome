@@ -1,0 +1,10 @@
+git submodule update --init --recursive
+mkdir build; cd build
+cmake -DCMAKE_TOOLCHAIN_FILE=C:\Users\samsung\Programs\emscripten-1.39.4.3-windows64\emscripten-release-bundle\emsdk\fastcomp\emscripten\cmake\Modules\Platform\Emscripten.cmake -G Ninja ..
+C:\tizen-studio\tools\ide\bin\tizen.bat run -p MoonLightS.MoonlightWasm 
+C:\tizen-studio\tools\ide\bin\tizen.bat install -n MoonlightWasm.wgt 
+C:\tizen-studio\tools\ide\bin\tizen.bat package -t wgt -- . 
+cmake --install . --prefix . 
+cmake -DCMAKE_TOOLCHAIN_FILE=C:\Users\samsung\Programs\emscripten-1.39.4.4-windows64\emscripten-release-bundle\emsdk\fastcomp\emscripten\cmake\Modules\Platform\Emscripten.cmake -G Ninja .. 
+emsdk activate latest-fastcomp 
+ninja 
